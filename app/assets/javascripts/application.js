@@ -23,11 +23,11 @@ var keysDown = [false,false,false,false,false];
 document.onkeydown=function(e){
   var e = window.event || e;
 
-    if (e.keyCode == 86 && keysDown[0]==false)  {l = l + 1; keysDown[0]=true}
-    if (e.keyCode == 82 && keysDown[1]==false)  {l = l + 2; keysDown[1]=true}
-    if (e.keyCode == 69 && keysDown[2]==false)  {l = l + 4; keysDown[2]=true}
-    if (e.keyCode == 87 && keysDown[3]==false)  {l = l + 8; keysDown[3]=true}
-    if (e.keyCode == 81 && keysDown[4]==false)  {l = l + 16;keysDown[4]=true}
+    if (e.keyCode == 86 && keysDown[0]==false)  {l = l + 1; keysDown[0]=true; $(".l1").addClass("highlight");}
+    if (e.keyCode == 82 && keysDown[1]==false)  {l = l + 2; keysDown[1]=true; $(".l2").addClass("highlight");}
+    if (e.keyCode == 69 && keysDown[2]==false)  {l = l + 4; keysDown[2]=true; $(".l3").addClass("highlight");}
+    if (e.keyCode == 87 && keysDown[3]==false)  {l = l + 8; keysDown[3]=true; $(".l4").addClass("highlight");}
+    if (e.keyCode == 81 && keysDown[4]==false)  {l = l + 16;keysDown[4]=true; $(".l5").addClass("highlight");}
 
   console.debug("down" + l)
   //$("#text").append("a");
@@ -171,11 +171,11 @@ if (l==17){
 
 document.onkeyup=function(e){
   var e = window.event || e;
-  if (e.keyCode ==86)  {l = l-1; keysDown[0]=false}
-  if (e.keyCode ==82)  {l = l-2; keysDown[1]=false}
-  if (e.keyCode ==69)  {l = l-4; keysDown[2]=false}
-  if (e.keyCode ==87)  {l = l-8; keysDown[3]=false}
-  if (e.keyCode ==81)  {l = l-16;keysDown[4]=false}
+  if (e.keyCode ==86)  {l = l-1; keysDown[0]=false; $(".l1").removeClass("highlight");}
+  if (e.keyCode ==82)  {l = l-2; keysDown[1]=false; $(".l2").removeClass("highlight");}
+  if (e.keyCode ==69)  {l = l-4; keysDown[2]=false; $(".l3").removeClass("highlight");}
+  if (e.keyCode ==87)  {l = l-8; keysDown[3]=false; $(".l4").removeClass("highlight");}
+  if (e.keyCode ==81)  {l = l-16;keysDown[4]=false; $(".l5").removeClass("highlight");}
   console.debug("up" + l)
   console.debug(e.keyCode)
 }
