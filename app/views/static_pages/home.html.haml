@@ -1,64 +1,83 @@
-%h1 FreeType
+%h2{ :style => "margin-bottom: 20px"} FreeType
 .br
 .br
 
-%p#text
+%h4 Get Started
+.row
+  .span6    
+    %ol.help
+      %li Place left hand thumb on the 'v', and right hand thumb on the 'm',  Your fingers should now fall on the keys as shown in the diagram to the right. These are the only keys you will using, so you will not need to move your hands.
+      %li Press keys with left hand to show on the table the set of keys that can picked with right. With no keys pressed on left space, delete and common punctuation are available
+
+      %li Press keys with right hand to pick letter from set; eg, setting with the left thumb and triggering with right thumb will produce an 'a'. You now have the ability to type using the 25 letters, and symbols on the table.
+
+      %li Where is the z? Start using combinations to produce more symbols.  Press 2,4 ('w' and 'r') with your left and 1 ('m') on right to trigger 'z'.  More combinations?. Add 5 with the left to produce capitals eg left(5,1) and right(1) will trigger 'A'  
 
 
-%table.table
-  %tbody
-    %tr
-      %th 
-      %th 1(m)
-      %th 2(i)
-      %th 3(o)
-      %th 4(p)
-      %th 5([) 
-    %tr.l5
-      %th 5(q)
-      %td.r1 u
-      %td.r2 v
-      %td.r3 w
-      %td.r4 x
-      %td.r5 y 
-    %tr.l4
-      %th 4(w)
-      %td.r1 p
-      %td.r2 q
-      %td.r3 r
-      %td.r4 s
-      %td.r5 t
-    %tr.l3
-      %th 3(e)
-      %td.r1 k
-      %td.r2 l
-      %td.r3 m
-      %td.r4 n
-      %td.r5 o       
-    %tr.l2
-      %th 2(r)
-      %td.r1 f
-      %td.r2 g
-      %td.r3 h
-      %td.r4 i
-      %td.r5 j
-    %tr.l1
-      %th 1(v)
-      %td.r1 a
-      %td.r2 b
-      %td.r3 c
-      %td.r4 d
-      %td.r5 e
-    %tr
-      %th 
-      %td.r1 space
-      %td.r2 .
-      %td.r3 ,
-      %td.r4 '
-      %td.r5 delete   
 
-           
+  .span6
+    =image_tag("keyboard.jpg", class: "key pull-right")
 
+
+    %table.table.table-bordered{ :style => "margin-left: 40px; margin-top: 70px"}
+      %tbody
+        %tr
+          %th 
+          %th 1(m)
+          %th 2(i)
+          %th 3(o)
+          %th 4(p)
+          %th 5([) 
+        %tr.l5
+          %th 5(q)
+          %td.r1 u
+          %td.r2 v
+          %td.r3 w
+          %td.r4 x
+          %td.r5 y 
+        %tr.l4
+          %th 4(w)
+          %td.r1 p
+          %td.r2 q
+          %td.r3 r
+          %td.r4 s
+          %td.r5 t
+        %tr.l3
+          %th 3(e)
+          %td.r1 k
+          %td.r2 l
+          %td.r3 m
+          %td.r4 n
+          %td.r5 o       
+        %tr.l2
+          %th 2(r)
+          %td.r1 f
+          %td.r2 g
+          %td.r3 h
+          %td.r4 i
+          %td.r5 j
+        %tr.l1
+          %th 1(v)
+          %td.r1 a
+          %td.r2 b
+          %td.r3 c
+          %td.r4 d
+          %td.r5 e
+        %tr.l0
+          %th 
+          %td.r1 space
+          %td.r2 .
+          %td.r3 ,
+          %td.r4 '
+          %td.r5 del 
+.row
+  .span6
+    %h4 About
+    .p.about.pull-right By reducing the number of keys needed to type to 10 we remove the need for a board of keys,  and now just need a button assigned to each finger; this could be a glove, or some other hand held device. Without a board we no longer need a table,  giving us much greater freedom to where we can input text.  But what about the mouse?  The latest device I have created has a gyroscope in the right hand device which provides a natural way to control a pointer.
+  .span1    
+  .span5      
+    %h4 Text Appears Here...
+    %p#text  
 
 
 

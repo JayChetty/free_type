@@ -2,8 +2,12 @@
 var l = 0;
 var keysDown = [false,false,false,false,false];
 
+$(document).ready(function(){
+  $(".l0").addClass("highlight")  
+});
 document.onkeydown=function(e){
-  var e = window.event || e;
+  $(".l0").removeClass("highlight")  
+  var e = window.event || e;v
 
     if (e.keyCode == 86 && keysDown[0]==false)  {l = l + 1; keysDown[0]=true; $(".l1").addClass("highlight");}
     if (e.keyCode == 82 && keysDown[1]==false)  {l = l + 2; keysDown[1]=true; $(".l2").addClass("highlight");}
@@ -105,8 +109,7 @@ if (l==17){
   if (e.keyCode==219) {$("#text").append("Y");}
   }
   
-
-  
+ 
   if (l==3){
   if (e.keyCode==77) {$("#text").append("1");}
   if (e.keyCode==73) {$("#text").append("2");}
@@ -140,7 +143,7 @@ if (l==17){
   }
   
   if (l==10){
-  if (e.keyCode==77) {$("#text").append("|");}
+  if (e.keyCode==77) {$("#text").append("z");}
   if (e.keyCode==73) {$("#text").append("{");}
   if (e.keyCode==79) {$("#text").append("}");}
   if (e.keyCode==80) {$("#text").append("(");}
@@ -157,9 +160,12 @@ document.onkeyup=function(e){
   if (e.keyCode ==69)  {l = l-4; keysDown[2]=false; $(".l3").removeClass("highlight");}
   if (e.keyCode ==87)  {l = l-8; keysDown[3]=false; $(".l4").removeClass("highlight");}
   if (e.keyCode ==81)  {l = l-16;keysDown[4]=false; $(".l5").removeClass("highlight");}
+  if (l == 0) {$(".l0").addClass("highlight");}
   console.debug("up" + l)
   console.debug(e.keyCode)
 }
+
+
 
 
 
