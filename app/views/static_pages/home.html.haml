@@ -4,9 +4,10 @@
 
 %h4 Get Started
 .row
-  .span6    
+  .span6  
+    =image_tag("keyboard.jpg", class: "key")  
     %ol.help
-      %li Place left hand thumb on the 'v', and right hand thumb on the 'm',  Your fingers should now fall on the keys as shown in the diagram to the right. These are the only keys you will using, so you will not need to move your hands.
+      %li Place left hand thumb on the 'v', and right hand thumb on the 'm',  Your fingers should now fall on the keys as shown in the diagram above. These are the only keys you will using, so you will not need to move your hands.
       %li Press keys with left hand to show on the table the set of keys that can picked with right. 
 
       %li Press keys with right hand to pick letter from set; eg, setting with the left thumb and triggering with right thumb will produce an 'a'. Try it! You now have the ability to type using the 25 letters. With nothing pressed on the left hand; space, delete and common punctuation are available.
@@ -16,10 +17,10 @@
 
 
   .span6
-    =image_tag("keyboard.jpg", class: "key pull-right")
+    
 
 
-    %table.table.table-bordered{ :style => "margin-left: 40px; margin-top: 70px"}
+    %table.table.table-bordered
       %tbody
         %tr
           %th 
@@ -70,14 +71,11 @@
           %td.r3 ,
           %td.r4 '
           %td.r5 del 
+    %h4{ :style => "margin-left: 20px; margin-top: 40px"} Text Appears Here...
+    %p#text            
 .row
-  .span6
-    %h4 About
-    %small.about.pull-right By reducing the number of keys needed to type to 10 we remove the need for a board of keys,  and now just need a button assigned to each finger; this could be a glove, or some other hand held device. Without a board we no longer need a table,  giving us much greater freedom to where we can input text.  But what about the mouse?  The latest device I have created has a gyroscope in the right hand device which provides a natural way to control a pointer. Simplifying the
-  .span1    
-  .span5      
-    %h4 Text Appears Here...
-    %p#text  
+  %h4 About
+  %small.about By reducing the number of keys needed to type to 10 we remove the need for a board of keys,  and now just need a button assigned to each finger; this could be a glove, or some other hand held device. Without a board we no longer need a table,  giving us much greater freedom to where we can input text.  But what about the mouse?  The latest device I have created has a gyroscope in the right hand device which provides a natural way to control a pointer.
 
 
 
